@@ -16,9 +16,7 @@ def signup(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('index') #다시 지시를 하겠다 index로! 
+            return redirect('index')
     else:
         form = UserForm()
     return render(request, 'common/signup.html', {'form': form})
-
-
