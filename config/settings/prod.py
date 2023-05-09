@@ -11,10 +11,7 @@ DATABASES = {
         'NAME': 'pybo',
         'USER' : 'encore',
         'PASSWORD' : 'encore!@#',
-        'HOST' : '3.38.101.98', 
-        'OPTIONS': {
-            'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
-        }
+        'HOST' : '3.38.101.98',
+        'PORT' : '3306'
     }
 }
-
